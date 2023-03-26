@@ -69,7 +69,7 @@ chat.style.right = '20px'
 chat.style.width = '85vw'
 chat.style.height = '70vh'
 chat.style.boxShadow =
-  'rgba(150, 150, 150, 0.15) 0px 6px 24px 0px, rgba(150, 150, 150, 0.15) 0px 0px 0px 1px'
+    'rgba(150, 150, 150, 0.15) 0px 6px 24px 0px, rgba(150, 150, 150, 0.15) 0px 0px 0px 1px'
 chat.style.display = 'none'
 chat.style.borderRadius = '10px'
 chat.style.zIndex = 999999999
@@ -103,13 +103,13 @@ handleChatWindowSizeChange(mediaQuery)
 
 const getChatButtonColor = async () => {
   const response = await fetch(
-    `https://www.chatbase.co/api/get-chatbot-button-color?chatbotId=${scriptTag.id}`,
-    {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    }
+      `https://www.chatbase.co/api/get-chatbot-button-color?chatbotId=${scriptTag.id}`,
+      {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }
   )
 
   const data = await response.json()
