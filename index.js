@@ -78,7 +78,7 @@ chat.style.overflow = 'hidden'
 document.body.appendChild(chat)
 
 chat.innerHTML = `<iframe
-src="https://www.chatbase.co/chatbot-iframe/${scriptTag.id}"
+src="https://balio-chatbot.vercel.app/chatbot?${scriptTag.id}"
 width="100%"
 height="100%"
 frameborder="0"
